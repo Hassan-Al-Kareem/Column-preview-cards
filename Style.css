@@ -1,0 +1,78 @@
+/* CSS Values */
+:root {
+    /* Cards colors */
+    --card-1-color: hsl(31, 77%, 52%);
+    --card-2-color: hsl(184, 100%, 22%);
+    --card-3-color: hsl(179, 100%, 13%);
+
+    /* Texts colors */
+    --p-color: hsla(0, 0%, 100%, 0.75);
+    --heading-color: hsl(0, 0%, 95%);
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+@media (min-width: 375px){
+    .container {
+        width: 96%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        margin: 110px auto;
+    }
+}
+/* container and cards */
+.container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 450px;
+    padding: 20px;
+}
+.card-1 {
+    background-color: var(--card-1-color);
+}
+.card-2 {
+    background-color: var(--card-2-color);
+}
+.card-3{
+    background-color: var(--card-3-color);
+}
+
+/* content of container */
+img {
+    width: 50px;
+    margin-bottom: -50px;
+}
+h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    color: var(--heading-color);
+}
+p {
+    color: var(--p-color);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-top:-75px;
+
+}
+button {
+    color: var(--heading-color);
+    font-family: 'Lexend Deca', sans-serif;
+    width: 120px;
+    height: 30px;
+    background: none;
+    border: 2px solid var(--heading-color);
+    border-radius: 50px;
+    cursor: pointer;
+}
